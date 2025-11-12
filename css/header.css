@@ -7,6 +7,7 @@ header{
   justify-content: space-between;
   align-items: flex-start;
   padding: 38px 48px;
+  position: relative;
 }
 
 .logo{
@@ -19,7 +20,29 @@ header{
  margin-top: 24px; 
 }
 
+input[type="checkbox"]:checked ~ nav{
+  display: block;
+  position: absolute;
+  width: 100%;
+  background-color: var(---background-tertiary-color);
+}
+
+.list-link{
+  list-style: none;
+}
+
+.list-link li a {
+  color: var(---text-secondary-color);
+  text-decoration: none;
+}
+
+.list-link li{
+  margin: 16px 0;
+}
+
 nav{
   display: none;
+  top: 100%;
+  left: 0%;
 }
 
